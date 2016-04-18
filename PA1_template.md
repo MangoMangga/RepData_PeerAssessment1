@@ -23,7 +23,7 @@ plot(totalSteps$date, totalSteps$steps, main = "Histogram of Steps Taken per day
      lwd = 4, col = "blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)
+![](http://s20.postimg.org/pougivsot/plot1.png)
 
 Mean
 
@@ -57,7 +57,7 @@ plot(avgSteps$interval, avgSteps$steps, type = "l", xlab = "Time Intervals (5 mn
      col = "blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
+![](http://s20.postimg.org/avfsy4kxp/plot2.png)
 
 The Peak Data 
 
@@ -112,7 +112,7 @@ plot(totalSteps$date, totalSteps$steps, main = "Histogram of Steps Taken per day
      lwd = 4, col = "red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)
+![](http://s20.postimg.org/qi72bhypp/plot3.png)
 
 ```r
 mean(totalSteps$steps)
@@ -146,9 +146,5 @@ avgStepsDay <- aggregate(steps ~ interval + days, data = dat, mean)
 xyplot(steps ~ interval | days, avgStepsDay, type = "l", layout = c(1, 2), xlab = "Interval", ylab = "Average Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)
+![](http://s20.postimg.org/gaoiz3chp/plot4.png)
 
-
-I don't know why my plot doesn't appear properly. I tried many times and still got the same. But when i run this code beyond Rmarkdown it is work. You can see my plot here..
-
-![](plot4.png)

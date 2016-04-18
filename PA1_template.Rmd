@@ -95,8 +95,3 @@ avgStepsDay <- aggregate(steps ~ interval + days, data = dat, mean)
 xyplot(steps ~ interval | days, avgStepsDay, type = "l", layout = c(1, 2), xlab = "Interval", ylab = "Average Number of Steps")
 
 ```
-
-
-I don't know why my plot doesn't appear properly. I tried many times and still got the same. But when i run this code beyond Rmarkdown it is work. You can see my plot here..
-
-![](plot4.png)

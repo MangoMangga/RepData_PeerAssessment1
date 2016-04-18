@@ -23,7 +23,7 @@ plot(totalSteps$date, totalSteps$steps, main = "Histogram of Steps Taken per day
      lwd = 4, col = "blue")
 ```
 
-![](coba_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](coba_files/figure-html/unnamed-chunk-2-1.png)
 
 Mean
 
@@ -57,7 +57,7 @@ plot(avgSteps$interval, avgSteps$steps, type = "l", xlab = "Time Intervals (5 mn
      col = "blue")
 ```
 
-![](coba_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](coba_files/figure-html/unnamed-chunk-5-1.png)
 
 The Peak Data 
 
@@ -112,7 +112,7 @@ plot(totalSteps$date, totalSteps$steps, main = "Histogram of Steps Taken per day
      lwd = 4, col = "red")
 ```
 
-![](coba_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](coba_files/figure-html/unnamed-chunk-10-1.png)
 
 ```r
 mean(totalSteps$steps)
@@ -142,11 +142,11 @@ weekd <- c("Monday","Thursday","Tuesday","Wednesday","Friday")
 dat$days <- ifelse(days %in% weekd,"Weekdays","Weekend")
 
 avgStepsDay <- aggregate(steps ~ interval + days, data = dat, mean)
-library(lattice)
+
 xyplot(steps ~ interval | days, avgStepsDay, type = "l", layout = c(1, 2), xlab = "Interval", ylab = "Average Number of Steps")
 ```
 
-![](coba_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](coba_files/figure-html/unnamed-chunk-11-1.png)
 
 
 I don't know why my plot doesn't appear properly. I tried many times and still got the same. But when i run this code beyond Rmarkdown it is work. You can see my plot here..
